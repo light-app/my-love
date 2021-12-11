@@ -1,0 +1,68 @@
+.result-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  padding: 80px 20px 20px 20px;
+  background: no-repeat url("../../img/bg.png");
+  background-size: cover;
+
+  &.web {
+    padding: 0px 20px 20px 20px;
+    height: 100vh;
+
+    button {
+      height: 40px;
+    }
+  }
+
+  .icon0,
+  .icon1,
+  .icon2,
+  .icon3,
+  .icon4,
+  .icon5,
+  .icon6,
+  .icon7,
+  .icon8,
+  .icon9 {
+    margin-bottom: 10px;
+  }
+
+  .img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    background-color: white;
+    min-width: 300px;
+    margin-bottom: 10px;
+    height: 50px;
+
+    &:first-child {
+      margin-top: 10px;
+      animation: 3s gra-anim infinite alternate;
+
+      span {
+        font-size: 14px;
+      }
+    }
+
+    span {
+      color: black;
+      font-size: 11px;
+    }
+  }
+
+  @keyframes gra-anim {
+    50% {
+      background: skyblue;
+      box-shadow: 0 -200px 100px -100px #60ebd1 inset;
+    }
+  }
+}
